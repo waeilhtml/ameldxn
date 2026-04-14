@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, shrink-to-fit=no">
+    <meta name="description" content="شركة DXN الماليزية - رائدة الصحة الطبيعية والتسويق المباشر في أكثر من 180 دولة. منتجات طبيعية قائمة على الفطر الريشي وجودة عالمية.">
+    <meta name="keywords" content="DXN, جانوديرما, ريشي, سبيرولينا, تسويق شبكي, MLM, مكملات غذائية, ليم سيوجين, ماليزيا">
+    <meta name="author" content="Amel - DXN Partner">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:title" content="DXN Global - الجديرة بالثقة منذ 1993">
+    <meta property="og:description" content="اكتشف قوة المنتجات الصحية الطبيعية ونظام التوزيع العالمي مع DXN.">
+    <meta property="og:image" content="https://i.ibb.co/BVzKKKzF/IMG.jpg">
+    <meta property="og:type" content="website">
+    
+    <title>DXN مع أمال | صحة طبيعية وفرصة عالمية</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* ===== PRELOADER ===== */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #0a0a0a;
+            z-index: 99999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.4s, visibility 0.4s;
+        }
+        
+        #preloader.fade-out {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .loader {
+            text-align: center;
+        }
+        
+        .loader img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            animation: pulse-logo 1.5s ease-in-out infinite;
+            border: 3px solid var(--gold);
+        }
+        
+        .loader-spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid #333;
+            border-top-color: var(--gold);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+        
+        @keyframes spin { to { transform: rotate(360deg); } }
+        
+        @keyframes pulse-logo {
+            0%, 100% { transform: scale(1); opacity: 1; box-shadow: 0 0 20px rgba(201, 162, 77, 0.3); }
+            50% { transform: scale(1.05); opacity: 0.9; box-shadow: 0 0 40px rgba(201, 162, 77, 0.6); }
+        }
+
+        /* ===== RESET & BASE ===== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; -webkit-tap-highlight-color: transparent; }
+        body { font-family: 'Tajawal', sans-serif; background-color: #ffffff; color: #1e1e1e; line-height: 1.6; overflow-x: hidden; font-size: 16px; }
+
+        :root {
+            --primary: #1a3b32; --primary-light: #2a5a4a; --primary-dark: #0f2821;
+            --gold: #c9a24d; --gold-light: #e2c47c; --gold-dark: #8f6f2d;
+            --gray-50: #f9fafb; --gray-100: #f3f4f6; --gray-200: #e5e7eb;
+            --gray-600: #4b5563; --gray-800: #1f2937;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05); --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1); --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+            --border-radius: 16px; --border-radius-sm: 12px; --container-padding: 1.25rem;
+            --whatsapp-green: #25D366; --whatsapp-dark: #128C7E; --navbar-bg: #0a0a0a;
+        }
+
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 var(--container-padding); }
+
+        /* ===== TYPOGRAPHY ===== */
+        h1 { font-size: 2rem; line-height: 1.3; } h2 { font-size: 1.75rem; line-height: 1.3; }
+        h3 { font-size: 1.25rem; line-height: 1.4; } p { font-size: 1rem; margin-bottom: 1rem; }
+        .section-subtitle { color: var(--gold-dark); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 0.5rem; }
+        .section-title { font-size: 1.75rem; font-weight: 800; color: var(--primary-dark); line-height: 1.3; margin-bottom: 1rem; }
+        .section-title span { color: var(--gold-dark); position: relative; display: inline-block; }
+        .section-title span::after { content: ''; position: absolute; bottom: 5px; left: 0; width: 100%; height: 6px; background: rgba(201, 162, 77, 0.2); z-index: -1; }
+
+        /* ===== BUTTONS ===== */
+        .btn { display: inline-block; padding: 0.875rem 1.5rem; border-radius: 50px; font-weight: 700; text-decoration: none; transition: all 0.3s; text-align: center; font-size: 1rem; width: fit-content; cursor: pointer; border: none; }
+        .btn-primary { background: var(--primary); color: white; box-shadow: var(--shadow-md); }
+        .btn-primary:hover, .btn-primary:active { background: var(--primary-light); transform: translateY(-2px); }
+        .btn-outline { border: 2px solid var(--primary); color: var(--primary); background: transparent; }
+        .btn-outline:hover, .btn-outline:active { background: var(--primary); color: white; }
+        .btn-gold { background: var(--gold); color: var(--primary-dark); box-shadow: var(--shadow-md); }
+        .btn-gold:hover, .btn-gold:active { background: var(--gold-light); }
+        .btn-block { width: 100%; display: block; }
+
+        /* ===== WHATSAPP ===== */
+        .whatsapp-float { position: fixed; bottom: 20px; right: 20px; width: 60px; height: 60px; background-color: var(--whatsapp-green); color: white; border-radius: 50%; text-align: center; font-size: 32px; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); z-index: 999; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s ease; animation: pulse 2s infinite; border: 2px solid white; }
+        .whatsapp-float:hover { background-color: var(--whatsapp-dark); transform: scale(1.1); box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5); }
+        .whatsapp-tooltip { position: fixed; bottom: 90px; right: 20px; background: white; color: var(--gray-800); padding: 0.75rem 1.25rem; border-radius: 50px; box-shadow: var(--shadow-lg); z-index: 998; font-size: 0.9rem; font-weight: 500; display: flex; align-items: center; gap: 0.5rem; opacity: 0; visibility: hidden; transition: all 0.3s; white-space: nowrap; border: 1px solid var(--gold-light); }
+        .whatsapp-tooltip.show { opacity: 1; visibility: visible; }
+        .whatsapp-tooltip i { color: var(--whatsapp-green); font-size: 1.2rem; }
+        .whatsapp-tooltip .close-tooltip { background: none; border: none; color: var(--gray-600); cursor: pointer; font-size: 1rem; padding: 0 0.25rem; margin-right: 0.5rem; }
+        @keyframes pulse { 0% { box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); } 50% { box-shadow: 0 4px 25px rgba(37, 211, 102, 0.7); } 100% { box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); } }
+
+        /* ===== HEADER ===== */
+        .navbar { position: fixed; top: 0; left: 0; right: 0; background: var(--navbar-bg); backdrop-filter: blur(10px); box-shadow: 0 2px 10px rgba(0,0,0,0.3); z-index: 1000; padding: 0.5rem 0; border-bottom: 2px solid var(--gold); }
+        .navbar .container { display: flex; align-items: center; justify-content: space-between; }
+        .logo-area { display: flex; align-items: center; gap: 10px; }
+        .logo-amel { display: flex; align-items: center; }
+        .logo-amel img { height: 55px; width: 55px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold); display: block; }
+        .powered-text { color: var(--gold-light); font-size: 0.9rem; font-weight: 600; letter-spacing: 1px; }
+        .nav-links { display: none; }
+        .nav-links.active { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--navbar-bg); padding: 1.5rem; box-shadow: var(--shadow-lg); gap: 1rem; border-bottom: 2px solid var(--gold-light); }
+        .nav-links a { text-decoration: none; color: #ffffff; font-weight: 500; font-size: 1.1rem; padding: 0.5rem 0; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--gold-light); }
+        .nav-cta { background: var(--gold); color: #000000 !important; padding: 0.75rem 1.5rem !important; border-radius: 50px; font-weight: 700; text-align: center; margin-top: 0.5rem; }
+        .mobile-menu-btn { display: block; background: none; border: none; font-size: 1.5rem; color: var(--gold); cursor: pointer; padding: 0.5rem; }
+
+        /* ===== HERO ===== */
+        .hero { padding: 5rem 0 2rem; background: linear-gradient(135deg, #f0f7f4 0%, #ffffff 100%); margin-top: 65px; }
+        .hero-grid { display: flex; flex-direction: column; gap: 2rem; }
+        .hero-badge { display: inline-block; background: var(--gold-light); color: var(--primary-dark); padding: 0.3rem 1rem; border-radius: 50px; font-weight: 700; font-size: 0.8rem; margin-bottom: 1rem; }
+        .hero-title { font-size: 2rem; font-weight: 900; line-height: 1.3; color: var(--primary-dark); margin-bottom: 1rem; }
+        .hero-description { font-size: 1rem; color: var(--gray-600); margin-bottom: 1.5rem; }
+        .hero-cta { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.5rem; }
+        .hero-cta .btn { width: 100%; }
+        .hero-features { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; font-size: 0.9rem; }
+        .hero-features div { display: flex; align-items: center; gap: 0.5rem; }
+        .hero-features i { color: var(--gold-dark); }
+        .hero-video-wrapper { position: relative; border-radius: var(--border-radius-sm); overflow: hidden; box-shadow: var(--shadow-lg); width: 100%; }
+        .hero-video-wrapper iframe { width: 100%; aspect-ratio: 16/9; border: none; display: block; }
+
+        /* ===== STATS ===== */
+        .stats-bar { background: var(--primary); color: white; padding: 2rem 0; }
+        .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; text-align: center; }
+        .stat-number { font-size: 2rem; font-weight: 900; color: var(--gold-light); margin-bottom: 0.25rem; }
+        .stat-label { font-size: 0.85rem; opacity: 0.9; }
+
+        /* ===== SECTIONS ===== */
+        section { padding: 3rem 0; }
+        .section-header { text-align: center; margin-bottom: 2rem; }
+
+        /* ===== ONE DRAGON - ARROW FIX ===== */
+        .dragon-flow { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; margin: 1.5rem 0; }
+        .flow-step { background: white; padding: 1rem 1.5rem; border-radius: 50px; box-shadow: var(--shadow-md); font-weight: 700; color: var(--primary); border: 1px solid var(--gold-light); width: 100%; max-width: 250px; text-align: center; font-size: 0.95rem; }
+        .flow-arrow { color: var(--gold); font-size: 1.5rem; }
+        /* الافتراضي (للهاتف): السهم للأسفل */
+        .flow-arrow i { transform: rotate(90deg); }
+        .dragon-info-grid { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem; }
+        .dragon-card { background: var(--gray-50); padding: 1.5rem; border-radius: var(--border-radius-sm); }
+        .dragon-card h3 { color: var(--primary-dark); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem; }
+        .dragon-card h3 i { color: var(--gold-dark); font-size: 1.2rem; }
+
+        /* ===== WORK SYSTEMS ===== */
+        .work-systems-section { background: var(--gray-50); }
+        .systems-grid { display: flex; flex-direction: column; gap: 2rem; }
+        .system-card { background: white; border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--gray-200); transition: transform 0.3s, box-shadow 0.3s; }
+        .system-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-xl); }
+        .system-header { padding: 1.5rem; color: white; text-align: center; }
+        .system-header.basic { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); }
+        .system-header.ioc { background: linear-gradient(135deg, var(--gold-dark) 0%, var(--gold) 100%); }
+        .system-header.asp { background: linear-gradient(135deg, #2d5a4a 0%, #1a3b32 100%); }
+        .system-header h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+        .system-header .system-subtitle { opacity: 0.9; font-size: 0.9rem; }
+        .system-body { padding: 1.5rem; }
+        .system-section { margin-bottom: 1.5rem; }
+        .system-section h4 { color: var(--primary-dark); margin-bottom: 0.75rem; font-size: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .system-section h4 i { color: var(--gold-dark); font-size: 1rem; }
+        .system-section ul { list-style: none; padding-right: 0.5rem; }
+        .system-section ul li { margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 0.5rem; font-size: 0.9rem; color: var(--gray-600); }
+        .system-section ul li i { color: var(--gold-dark); font-size: 0.8rem; margin-top: 0.25rem; }
+        .system-result { background: var(--gray-100); padding: 1rem; border-radius: var(--border-radius-sm); border-right: 4px solid var(--gold); }
+        .system-result p { margin-bottom: 0; font-weight: 500; color: var(--primary-dark); }
+        .system-result i { color: var(--gold-dark); margin-left: 0.5rem; }
+        .systems-summary { margin-top: 2rem; background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%); color: white; padding: 2rem; border-radius: var(--border-radius); text-align: center; }
+        .systems-summary h3 { color: var(--gold-light); margin-bottom: 1.5rem; font-size: 1.3rem; }
+        .summary-items { display: flex; flex-direction: column; gap: 1rem; }
+        .summary-item { display: flex; align-items: center; gap: 1rem; background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 50px; }
+        .summary-item i { width: 40px; height: 40px; background: var(--gold); color: var(--primary-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+        .summary-item span { font-weight: 500; }
+        .summary-item strong { color: var(--gold-light); }
+
+        /* ===== FOUNDER ===== */
+        .founder-section { background: var(--gray-50); }
+        .founder-grid { display: flex; flex-direction: column; gap: 2rem; }
+        .founder-image { text-align: center; }
+        .founder-image img { width: 100%; max-width: 300px; border-radius: 20px; box-shadow: var(--shadow-xl); border: 4px solid white; }
+        .founder-name { font-size: 1.75rem; font-weight: 800; color: var(--primary-dark); margin-bottom: 0.25rem; }
+        .founder-title { color: var(--gold-dark); font-weight: 700; margin-bottom: 1rem; font-size: 1rem; }
+        .founder-quote { font-size: 1.1rem; font-style: italic; color: var(--gray-600); padding: 1.25rem 0; border-top: 2px solid var(--gold-light); border-bottom: 2px solid var(--gold-light); margin: 1.25rem 0; }
+        .founder-facts { display: grid; grid-template-columns: 1fr; gap: 0.75rem; margin: 1.25rem 0; }
+        .fact-item { display: flex; align-items: center; gap: 0.75rem; }
+        .fact-item i { color: var(--gold-dark); font-size: 1.1rem; width: 24px; text-align: center; }
+
+        /* ===== CERTIFICATIONS ===== */
+        .certs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+        .cert-item { background: var(--gray-50); padding: 1rem 0.5rem; border-radius: var(--border-radius-sm); font-weight: 700; color: var(--primary-dark); border: 1px solid var(--gray-200); text-align: center; font-size: 0.85rem; }
+        .cert-item i { display: block; font-size: 1.5rem; color: var(--gold-dark); margin-bottom: 0.5rem; }
+        .esg-card { background: linear-gradient(135deg, #f0f7f4 0%, #e8f0ec 100%); padding: 1.5rem; border-radius: var(--border-radius-sm); margin-top: 1.5rem; }
+        .esg-card-content { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1rem; }
+        .esg-icon { background: var(--gold); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: var(--primary-dark); }
+        .esg-card h3 { color: var(--primary-dark); font-size: 1.3rem; }
+
+        /* ===== PRODUCTS ===== */
+        .products-section { background: var(--gray-50); }
+        .products-grid { display: flex; flex-direction: column; gap: 1rem; }
+        .product-category { background: white; border-radius: var(--border-radius-sm); padding: 1.5rem; box-shadow: var(--shadow-sm); border: 1px solid var(--gray-200); }
+        .category-icon { font-size: 2rem; color: var(--gold-dark); margin-bottom: 1rem; }
+        .category-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--primary-dark); }
+        .category-items { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+        .category-items li { color: var(--gray-600); font-size: 0.9rem; display: flex; align-items: center; }
+        .category-items li::before { content: "•"; color: var(--gold); font-weight: bold; margin-left: 0.5rem; }
+
+        /* ===== TESTIMONIALS ===== */
+        .testimonials-section { background: linear-gradient(135deg, #ffffff 0%, var(--gray-50) 100%); }
+        .testimonials-grid { display: flex; flex-direction: column; gap: 1.5rem; }
+        .testimonial-card { background: white; border-radius: var(--border-radius-sm); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--gray-200); transition: transform 0.3s, box-shadow 0.3s; }
+        .testimonial-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-xl); }
+        .testimonial-video { position: relative; aspect-ratio: 16/9; background: #000; }
+        .testimonial-video iframe { width: 100%; height: 100%; border: none; display: block; }
+        .testimonial-content { padding: 1.5rem; }
+        .testimonial-tag { display: inline-block; background: var(--gold-light); color: var(--primary-dark); padding: 0.25rem 1rem; border-radius: 50px; font-weight: 700; font-size: 0.75rem; margin-bottom: 0.75rem; }
+        .testimonial-title { font-size: 1.2rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.5rem; line-height: 1.4; }
+        .testimonial-desc { color: var(--gray-600); font-size: 0.9rem; margin-bottom: 1rem; }
+        .testimonial-meta { display: flex; align-items: center; gap: 0.5rem; color: var(--gold-dark); font-size: 0.85rem; font-weight: 600; }
+        .testimonial-meta i { font-size: 1rem; }
+        .testimonial-disclaimer { background: var(--gray-100); padding: 1.5rem; border-radius: var(--border-radius-sm); margin-top: 2rem; border-right: 4px solid var(--gold); }
+        .testimonial-disclaimer p { margin-bottom: 0.5rem; font-size: 0.9rem; }
+        .testimonial-disclaimer i { color: var(--gold-dark); margin-left: 0.5rem; }
+
+        /* ===== FEATURES ===== */
+        .features-grid { display: flex; flex-direction: column; gap: 1rem; }
+        .feature-card { background: white; padding: 1.5rem; border-radius: var(--border-radius-sm); box-shadow: var(--shadow-sm); border: 1px solid var(--gray-200); }
+        .feature-icon { width: 50px; height: 50px; background: rgba(201, 162, 77, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; color: var(--gold-dark); font-size: 1.5rem; }
+        .feature-title { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--primary-dark); }
+
+        /* ===== REFERRAL ===== */
+        .referral-section { background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%); color: white; padding: 2rem; border-radius: var(--border-radius); margin: 2rem 0; }
+        .referral-container { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1.5rem; }
+        .referral-title { font-size: 1.5rem; font-weight: 700; color: var(--gold-light); }
+        .referral-code-box { background: white; padding: 1.5rem 2rem; border-radius: var(--border-radius); display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; max-width: 400px; }
+        .referral-code-label { color: var(--gray-600); font-size: 0.9rem; font-weight: 500; }
+        .referral-code { font-size: 3rem; font-weight: 900; color: var(--primary-dark); letter-spacing: 8px; background: var(--gray-100); padding: 0.5rem 1.5rem; border-radius: 12px; border: 2px dashed var(--gold); font-family: 'Courier New', monospace; }
+        .copy-btn { background: var(--gold); color: var(--primary-dark); border: none; padding: 0.75rem 2rem; border-radius: 50px; font-weight: 700; font-size: 1rem; cursor: pointer; display: flex; align-items: center; gap: 0.5rem; transition: all 0.3s; border: 1px solid var(--gold-light); }
+        .copy-btn:hover { background: var(--gold-light); transform: translateY(-2px); }
+        .copy-btn.copied { background: #10b981; color: white; }
+        .referral-note { color: rgba(255,255,255,0.9); font-size: 0.95rem; max-width: 500px; }
+        .referral-note i { color: var(--gold-light); margin-left: 5px; }
+
+        /* ===== BUSINESS ===== */
+        .business-section { background: var(--gray-50); }
+        .business-grid { display: flex; flex-direction: column; gap: 2rem; }
+        .benefits-list { list-style: none; margin-bottom: 1.5rem; }
+        .benefits-list li { margin-bottom: 1rem; display: flex; gap: 0.75rem; }
+        .benefits-list li span:first-child { background: var(--gold-light); width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--primary-dark); flex-shrink: 0; font-size: 0.8rem; }
+        .disclaimer-note { background: white; padding: 1.25rem; border-radius: var(--border-radius-sm); border-right: 4px solid var(--gold); }
+        .steps-vertical { margin: 1.5rem 0; }
+        .step { display: flex; gap: 1rem; margin-bottom: 1.5rem; }
+        .step-number { width: 40px; height: 40px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.1rem; flex-shrink: 0; }
+        .step-content h3 { color: var(--primary-dark); margin-bottom: 0.25rem; font-size: 1.1rem; }
+        .step-content p { font-size: 0.9rem; margin-bottom: 0; }
+
+        /* ===== GLOBAL ===== */
+        .global-grid { display: flex; flex-direction: column; gap: 1.5rem; }
+        .global-card { padding: 2rem; border-radius: var(--border-radius); }
+        .global-card.primary { background: var(--primary); color: white; }
+        .global-card.primary h3 { color: var(--gold-light); font-size: 2rem; margin-bottom: 1rem; }
+        .global-card.primary p { font-size: 1.1rem; margin-bottom: 1rem; }
+        .global-card.secondary { background: var(--gray-100); }
+        .global-card.secondary h3 { font-size: 1.8rem; margin-bottom: 1rem; }
+        .global-card.secondary p { font-size: 1.1rem; margin-bottom: 1rem; }
+        .global-card ul { list-style: none; margin-top: 1rem; }
+        .global-card ul li { margin-bottom: 0.75rem; font-size: 1.05rem; display: flex; align-items: center; gap: 0.5rem; }
+        .global-card ul li i { color: var(--gold-dark); }
+
+        /* ===== FAQ ===== */
+        .faq-section { background: var(--gray-50); }
+        .faq-grid { display: flex; flex-direction: column; gap: 0.75rem; }
+        .faq-item { background: white; border-radius: var(--border-radius-sm); border: 1px solid var(--gray-200); overflow: hidden; }
+        .faq-question { padding: 1.25rem; font-weight: 700; display: flex; justify-content: space-between; align-items: center; background: white; cursor: pointer; font-size: 1rem; }
+        .faq-answer { padding: 0 1.25rem 1.25rem; color: var(--gray-600); display: none; font-size: 0.95rem; }
+        .faq-answer.show { display: block; }
+
+        /* ===== DISCLAIMER ===== */
+        .disclaimer-box { background: var(--gray-100); border-radius: var(--border-radius-sm); padding: 1.5rem; border-right: 4px solid var(--gold); }
+        .disclaimer-box h3 { color: var(--primary-dark); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem; }
+
+        /* ===== FINAL CTA ===== */
+        .final-cta { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; text-align: center; padding: 3rem 0; }
+        .final-cta h2 { color: white; margin-bottom: 1rem; }
+        .final-cta .btn-group { display: flex; flex-direction: column; gap: 0.75rem; }
+        .final-cta .btn-outline { border-color: white; color: white; }
+
+        /* ===== FOOTER ===== */
+        .footer { background: var(--primary-dark); color: white; padding: 2.5rem 0 1.5rem; }
+        .footer-grid { display: flex; flex-direction: column; gap: 2rem; }
+        .footer-logo img { height: 35px; filter: brightness(0) invert(1); margin-bottom: 1rem; }
+        .footer h4 { color: var(--gold-light); margin-bottom: 1rem; font-size: 1.1rem; }
+        .footer ul { list-style: none; }
+        .footer ul li { margin-bottom: 0.5rem; }
+        .footer ul li a { color: #ccc; text-decoration: none; font-size: 0.95rem; }
+        .footer ul li a:hover { color: var(--gold-light); }
+        .footer ul li i { margin-left: 8px; color: var(--gold-light); }
+        .footer-bottom { text-align: center; padding-top: 2rem; margin-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); color: #999; font-size: 0.85rem; }
+
+        /* ===== TOAST ===== */
+        .toast { position: fixed; bottom: 100px; left: 50%; transform: translateX(-50%) translateY(100px); background: #000000; color: white; padding: 1rem 2rem; border-radius: 50px; font-weight: 500; box-shadow: var(--shadow-xl); z-index: 9999; opacity: 0; transition: all 0.3s; border: 1px solid var(--gold); white-space: nowrap; }
+        .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+        .toast i { color: var(--gold-light); margin-left: 8px; }
+
+        /* ===== ANIMATIONS ===== */
+        .fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s; }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+        /* ===== RESPONSIVE ===== */
+        @media (min-width: 640px) {
+            :root { --container-padding: 2rem; }
+            h1 { font-size: 2.5rem; } h2 { font-size: 2rem; } .section-title { font-size: 2rem; }
+            .stats-grid { grid-template-columns: repeat(4, 1fr); } .certs-grid { grid-template-columns: repeat(4, 1fr); }
+            .products-grid { display: grid; grid-template-columns: repeat(2, 1fr); } .testimonials-grid { display: grid; grid-template-columns: repeat(2, 1fr); }
+            .features-grid { display: grid; grid-template-columns: repeat(2, 1fr); } .founder-facts { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { display: grid; grid-template-columns: repeat(2, 1fr); } .referral-code-box { flex-direction: row; justify-content: center; }
+            .systems-grid { display: grid; grid-template-columns: repeat(3, 1fr); } .summary-items { flex-direction: row; justify-content: center; }
+        }
+
+        @media (min-width: 768px) {
+            .mobile-menu-btn { display: none; }
+            .nav-links { display: flex; flex-direction: row; position: static; background: transparent; padding: 0; box-shadow: none; gap: 1.5rem; }
+            .nav-links a { font-size: 0.95rem; padding: 0; } .nav-cta { margin-top: 0; }
+            .hero { padding: 7rem 0 3rem; } .hero-grid { flex-direction: row; align-items: center; } .hero-content { flex: 1; } .hero-video { flex: 1; }
+            .hero-cta { flex-direction: row; } .hero-cta .btn { width: auto; }
+            /* على الحاسوب: السهم لليسار (←) */
+            .dragon-flow { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+            .dragon-flow .flow-arrow i { transform: rotate(0deg); }
+            .dragon-info-grid { flex-direction: row; } .dragon-card { flex: 1; }
+            .founder-grid { flex-direction: row; align-items: center; } .founder-image { flex: 1; } .founder-info { flex: 1.5; }
+            .esg-card-content { flex-direction: row; text-align: right; }
+            .testimonials-grid { grid-template-columns: repeat(3, 1fr); }
+            .business-grid { flex-direction: row; align-items: flex-start; } .business-grid > div { flex: 1; }
+            .global-grid { flex-direction: row; } .global-grid > div { flex: 1; }
+            .final-cta .btn-group { flex-direction: row; justify-content: center; }
+            .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
+            .referral-code-box { flex-direction: row; }
+        }
+
+        @media (min-width: 1024px) {
+            :root { --container-padding: 2.5rem; }
+            h1 { font-size: 3.5rem; } .hero-title { font-size: 3.2rem; } .section-title { font-size: 2.5rem; }
+            .products-grid { grid-template-columns: repeat(4, 1fr); } .features-grid { grid-template-columns: repeat(3, 1fr); }
+            .category-items { grid-template-columns: 1fr; } section { padding: 5rem 0; }
+            .navbar { padding: 0.6rem 0; } .logo-amel img { height: 60px; width: 60px; } .powered-text { font-size: 1rem; }
+            .nav-links { gap: 2rem; } .nav-links a { font-size: 1rem; }
+        }
+
+        @media (max-width: 640px) {
+            .logo-amel img { height: 50px; width: 50px; } .navbar .container { padding: 0 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="https://i.ibb.co/BVzKKKzF/IMG.jpg" alt="Amel">
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-area">
+                <a href="#" class="logo-amel"><img src="https://i.ibb.co/BVzKKKzF/IMG.jpg" alt="Amel"></a>
+                <span class="powered-text">Powered by amel</span>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#about">عن DXN</a><a href="#founder">المؤسس</a><a href="#products">المنتجات</a>
+                <a href="#testimonials">تجارب ملهمة</a><a href="#work-systems">أنظمة العمل</a><a href="#business">الفرصة</a>
+                <a href="#global">عالمياً</a><a href="#" class="nav-cta register-btn">انضم الآن</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content fade-up visible">
+                    <span class="hero-badge"><i class="fas fa-globe"></i> منذ 1993 في 180+ دولة</span>
+                    <h1 class="hero-title"><span>DXN Global</span><br>منتجات صحية طبيعية ونظام توزيع عالمي</h1>
+                    <p class="hero-description">الشركة "الجديرة بالثقة" - رائدة في إنتاج المكملات الغذائية الطبيعية القائمة على الفطر الريشي. أكثر من 18 مليون عضو حول العالم يثقون بجودتنا.</p>
+                    <div class="hero-cta">
+                        <a href="#" class="btn btn-primary register-btn">ابدأ رحلتك الآن <i class="fas fa-arrow-left"></i></a>
+                        <a href="#work-systems" class="btn btn-outline">طريقة العمل <i class="fas fa-cog"></i></a>
+                    </div>
+                    <div class="hero-features">
+                        <div><i class="fas fa-check-circle"></i> جودة عالمية</div>
+                        <div><i class="fas fa-check-circle"></i> 13 مصنعاً</div>
+                        <div><i class="fas fa-check-circle"></i> 9+ شهادات</div>
+                    </div>
+                </div>
+                <div class="hero-video fade-up visible">
+                    <div class="hero-video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/Ii4uTWezANs?si=LGMolHa65Lk3Fwj1" title="فيديو تعريفي عن DXN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <div class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item"><div class="stat-number">+18M</div><div class="stat-label">عضو حول العالم</div></div>
+                <div class="stat-item"><div class="stat-number">+180</div><div class="stat-label">دولة</div></div>
+                <div class="stat-item"><div class="stat-number">13</div><div class="stat-label">مصنعاً في 5 دول</div></div>
+                <div class="stat-item"><div class="stat-number">30+</div><div class="stat-label">عاماً من الريادة</div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About / One Dragon -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="section-subtitle">فلسفتنا في الجودة</div>
+                <h2 class="section-title">مفهوم <span>"التنين الواحد"</span></h2>
+                <p style="max-width: 700px; margin: 0 auto; color: var(--gray-600);">سيطرة كاملة على جميع مراحل الإنتاج لضمان أعلى معايير الجودة العالمية</p>
+            </div>
+            <div class="dragon-flow fade-up">
+                <div class="flow-step"><i class="fas fa-seedling" style="margin-left: 8px;"></i> الزراعة العضوية</div>
+                <div class="flow-arrow"><i class="fas fa-arrow-left"></i></div>
+                <div class="flow-step"><i class="fas fa-flask"></i> المعالجة</div>
+                <div class="flow-arrow"><i class="fas fa-arrow-left"></i></div>
+                <div class="flow-step"><i class="fas fa-industry"></i> التصنيع</div>
+                <div class="flow-arrow"><i class="fas fa-arrow-left"></i></div>
+                <div class="flow-step"><i class="fas fa-box"></i> التعبئة</div>
+                <div class="flow-arrow"><i class="fas fa-arrow-left"></i></div>
+                <div class="flow-step"><i class="fas fa-truck"></i> التوزيع</div>
+            </div>
+            <div class="dragon-info-grid">
+                <div class="dragon-card fade-up"><h3><i class="fas fa-tractor"></i> المزارع</h3><p>نتملك مزرعة الفطر الريشي في بوكيت وانغ بولاية قدح الماليزية بمساحة <strong>70 هكتاراً</strong> - الأكبر في ماليزيا. بالإضافة إلى مزارع الاسبيرولينا العضوية الحاصلة على شهادة المخطط العضوي الماليزي.</p></div>
+                <div class="dragon-card fade-up"><h3><i class="fas fa-building"></i> المصانع</h3><p><strong>13 مصنعاً</strong> في ماليزيا، الصين، الهند، إندونيسيا، والمكسيك. منها مصنع DXN Pharmaceutical بمساحة 34,000 م²، ومصانع القهوة بمساحة 42,000 م².</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder -->
+    <section id="founder" class="founder-section">
+        <div class="container">
+            <div class="founder-grid">
+                <div class="founder-image fade-up"><img src="https://i.ibb.co/1fmnRnPk/images.webp" alt="Datuk Dr. Lim Siow Jin"></div>
+                <div class="founder-info fade-up">
+                    <div class="section-subtitle">المؤسس ورئيس مجلس الإدارة التنفيذي</div>
+                    <h2 class="founder-name">الداتو الدكتور ليم سيوجين</h2>
+                    <div class="founder-title">Datuk Dr. Lim Siow Jin</div>
+                    <div class="founder-quote"><i class="fas fa-quote-right" style="color: var(--gold); opacity: 0.5; font-size: 1.5rem; vertical-align: middle;"></i> بدأت رحلتي البحثية عام 1983 حول فوائد الفطر الريشي. بعد 10 سنوات من البحث، أسست DXN لتكون "الجديرة بالثقة" في نشر الصحة الطبيعية حول العالم.</div>
+                    <div class="founder-facts">
+                        <div class="fact-item"><i class="fas fa-graduation-cap"></i><span>خريج المعهد الهندي للتكنولوجيا (IIT)</span></div>
+                        <div class="fact-item"><i class="fas fa-chart-line"></i><span>ضمن أغنى 50 شخصاً في ماليزيا (Forbes 2025)</span></div>
+                        <div class="fact-item"><i class="fas fa-building"></i><span>يمتلك 74.3% من أسهم DXN Holdings Bhd</span></div>
+                        <div class="fact-item"><i class="fas fa-trophy"></i><span>قاد إعادة إدراج الشركة في بورصة ماليزيا 2023</span></div>
+                    </div>
+                    <p>الدكتور ليم ليس مجرد رجل أعمال، بل عالم وباحث كرّس حياته لدراسة فوائد المكونات الطبيعية. تحت قيادته، نمت DXN من مختبر صغير إلى إمبراطورية صحية عالمية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section>
+        <div class="container">
+            <div class="section-header fade-up"><div class="section-subtitle">اعتماداتنا العالمية</div><h2 class="section-title">شهادات <span>الجودة والاستدامة</span></h2></div>
+            <div class="certs-grid fade-up">
+                <div class="cert-item"><i class="fas fa-certificate"></i> ISO 9001</div><div class="cert-item"><i class="fas fa-leaf"></i> ISO 14001</div>
+                <div class="cert-item"><i class="fas fa-pills"></i> GMP</div><div class="cert-item"><i class="fas fa-mosque"></i> HALAL</div>
+                <div class="cert-item"><i class="fas fa-shield-alt"></i> HACCP</div><div class="cert-item"><i class="fas fa-flask"></i> TGA أستراليا</div>
+                <div class="cert-item"><i class="fas fa-microscope"></i> ISO/IEC 17025</div><div class="cert-item"><i class="fas fa-seedling"></i> عضوي ماليزي</div>
+            </div>
+            <div class="esg-card fade-up"><div class="esg-card-content"><div class="esg-icon"><i class="fas fa-award"></i></div><div><h3>جائزة ESG PLUS Awards 🏆</h3><p>حصلت DXN مؤخراً على جائزة ESG PLUS المرموقة - وهي شهادة عالمية تُمنح للشركات المتميزة في <strong>الاستدامة البيئية والمسؤولية المجتمعية والحوكمة الأخلاقية</strong>.</p></div></div></div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header fade-up"><div class="section-subtitle">منتجات طبيعية يحتاجها الناس يومياً</div><h2 class="section-title">فئات <span>المنتجات الرئيسية</span></h2></div>
+            <div class="products-grid">
+                <div class="product-category fade-up"><div class="category-icon"><i class="fas fa-capsules"></i></div><h3 class="category-title">المكملات الغذائية</h3><ul class="category-items"><li>ريشي غانوديرما</li><li>سبيرولينا</li><li>فطر عرف الأسد</li><li>كورديسيبس</li><li>مورينزي</li></ul></div>
+                <div class="product-category fade-up"><div class="category-icon"><i class="fas fa-mug-hot"></i></div><h3 class="category-title">المشروبات الصحية</h3><ul class="category-items"><li>قهوة لينجزي السوداء</li><li>قهوة 3 في 1</li><li>شاي لينجزي</li><li>كاكاو كوكوزي</li></ul></div>
+                <div class="product-category fade-up"><div class="category-icon"><i class="fas fa-hand-sparkles"></i></div><h3 class="category-title">العناية الشخصية</h3><ul class="category-items"><li>معجون أسنان جانوزي</li><li>صابون جانوزي</li><li>شامبو طبيعي</li><li>زيت المساج</li></ul></div>
+                <div class="product-category fade-up"><div class="category-icon"><i class="fas fa-spa"></i></div><h3 class="category-title">العناية بالبشرة</h3><ul class="category-items"><li>مجموعة الصبار</li><li>مجموعة الجانوزي</li><li>كريمات طبيعية</li></ul></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header fade-up"><div class="section-subtitle">دليل الثقة</div><h2 class="section-title">تجارب <span>وقصص ملهمة</span></h2></div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-up"><div class="testimonial-video"><iframe src="https://www.youtube.com/embed/teOTN5ThAi8?si=iAmimpBAxCUmQ0NF" title="قصة شفاء سرطان الدم" frameborder="0" allowfullscreen></iframe></div><div class="testimonial-content"><span class="testimonial-tag"><i class="fas fa-heart" style="margin-left: 5px;"></i> شفاء</span><h3 class="testimonial-title">قصة شفاء من سرطان الدم</h3><p class="testimonial-desc">زوج ممرضة يروي تجربة شفاء مؤثرة مع منتجات DXN الطبيعية.</p><div class="testimonial-meta"><i class="fas fa-play-circle"></i><span>شهادة موثقة</span></div></div></div>
+                <div class="testimonial-card fade-up"><div class="testimonial-video"><iframe src="https://www.youtube.com/embed/X5jwXle1wVs?si=3uSlj4F2muruEqgp" title="قصة شفاء من العقم" frameborder="0" allowfullscreen></iframe></div><div class="testimonial-content"><span class="testimonial-tag"><i class="fas fa-baby" style="margin-left: 5px;"></i> حمل وإنجاب</span><h3 class="testimonial-title">قصة شفاء من العقم</h3><p class="testimonial-desc">تجربة ملهمة مع مكملات DXN الطبيعية التي ساعدت في تحقيق حلم الإنجاب.</p><div class="testimonial-meta"><i class="fas fa-play-circle"></i><span>شهادة موثقة</span></div></div></div>
+                <div class="testimonial-card fade-up"><div class="testimonial-video"><iframe src="https://www.youtube.com/embed/MARdFLi5688?si=RA2Zck9e6TMbniAT" title="تجربة التخلص من الاكتئاب" frameborder="0" allowfullscreen></iframe></div><div class="testimonial-content"><span class="testimonial-tag"><i class="fas fa-smile" style="margin-left: 5px;"></i> صحة نفسية</span><h3 class="testimonial-title">تجربة التخلص من الاكتئاب</h3><p class="testimonial-desc">كيف ساعدت منتجات DXN في تحسين المزاج والتخلص من الاكتئاب.</p><div class="testimonial-meta"><i class="fas fa-play-circle"></i><span>شهادة موثقة</span></div></div></div>
+            </div>
+            <div class="testimonial-disclaimer fade-up"><p><i class="fas fa-info-circle"></i> <strong>تنويه مهم:</strong> التجارب فردية. منتجات DXN مكملات غذائية طبيعية وليست أدوية.</p></div>
+        </div>
+    </section>
+
+    <!-- Why DXN -->
+    <section>
+        <div class="container">
+            <div class="section-header fade-up"><div class="section-subtitle">ما الذي يميزنا</div><h2 class="section-title">لماذا <span>DXN؟</span></h2></div>
+            <div class="features-grid">
+                <div class="feature-card fade-up"><div class="feature-icon"><i class="fas fa-flask"></i></div><h3 class="feature-title">البحث العلمي</h3><p>مختبرات بحثية متطورة وفريق علمي متخصص بقيادة مؤسس خريج IIT.</p></div>
+                <div class="feature-card fade-up"><div class="feature-icon"><i class="fas fa-globe"></i></div><h3 class="feature-title">عالم واحد - سوق واحد</h3><p>بناء شبكة توزيع عالمية برقم عضوية واحد.</p></div>
+                <div class="feature-card fade-up"><div class="feature-icon"><i class="fas fa-chart-pie"></i></div><h3 class="feature-title">استقرار مالي</h3><p>أكثر من 30 عاماً في السوق، مدرجة في بورصة ماليزيا.</p></div>
+                <div class="feature-card fade-up"><div class="feature-icon"><i class="fas fa-shopping-cart"></i></div><h3 class="feature-title">منتجات استهلاكية</h3><p>منتجات يحتاجها الناس يومياً مما يضمن ديمومة الاستهلاك.</p></div>
+                <div class="feature-card fade-up"><div class="feature-icon"><i class="fas fa-certificate"></i></div><h3 class="feature-title">اعتمادات عالمية</h3><p>9+ شهادات جودة تشمل TGA وHALAL وESG PLUS.</p></div>
+                <div class="feature-card fade-up"><div class="feature-icon"><i class="fas fa-users"></i></div><h3 class="feature-title">+18 مليون عضو</h3><p>مجتمع عالمي من الأعضاء والشركاء.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Systems -->
+    <section id="work-systems" class="work-systems-section">
+        <div class="container">
+            <div class="section-header fade-up"><div class="section-subtitle">طرق متكاملة للربح</div><h2 class="section-title">أنظمة <span>العمل في DXN</span></h2><p style="max-width: 700px; margin: 0 auto; color: var(--gray-600);">تعتمد شركة DXN على نظام عمل متكامل يمنحك أكثر من مصدر دخل، ويجمع بين البساطة والاستمرارية.</p></div>
+            <div class="systems-grid">
+                <div class="system-card fade-up"><div class="system-header basic"><h3>النظام الأساسي</h3><p class="system-subtitle">القاعدة الرئيسية لبناء دخل مستقر</p></div><div class="system-body"><div class="system-section"><h4><i class="fas fa-cog"></i> آلية العمل:</h4><ul><li><i class="fas fa-check"></i> شراء منتجات الشركة</li><li><i class="fas fa-check"></i> كل منتج يحتوي على نقاط PV</li><li><i class="fas fa-check"></i> عمولات بناء على حجم النقاط</li></ul></div><div class="system-section"><h4><i class="fas fa-coins"></i> مصادر الدخل:</h4><ul><li><i class="fas fa-check"></i> ربح مباشر من البيع</li><li><i class="fas fa-check"></i> عمولات على مبيعات الفريق</li><li><i class="fas fa-check"></i> مكافآت وترقيات</li></ul></div><div class="system-result"><p><i class="fas fa-chart-line"></i> <strong>النتيجة:</strong> دخل تدريجي ومستمر</p></div></div></div>
+                <div class="system-card fade-up"><div class="system-header ioc"><h3>نظام IOC</h3><p class="system-subtitle">نظام مصمم لتحقيق دخل سريع</p></div><div class="system-body"><div class="system-section"><h4><i class="fas fa-bolt"></i> آلية العمل:</h4><ul><li><i class="fas fa-check"></i> تسجيل عضو جديد</li><li><i class="fas fa-check"></i> شراء منتجات أو باقة بداية</li><li><i class="fas fa-check"></i> حصولك على عمولة مباشرة</li></ul></div><div class="system-section"><h4><i class="fas fa-star"></i> مميزات النظام:</h4><ul><li><i class="fas fa-check"></i> دخل فوري دون انتظار</li><li><i class="fas fa-check"></i> سهل للمبتدئين</li><li><i class="fas fa-check"></i> يعزز الحماس</li></ul></div><div class="system-result"><p><i class="fas fa-rocket"></i> <strong>النتيجة:</strong> أرباح مباشرة مع كل تسجيل</p></div></div></div>
+                <div class="system-card fade-up"><div class="system-header asp"><h3>نظام ASP</h3><p class="system-subtitle">بناء مشروع ثابت على أرض الواقع</p></div><div class="system-body"><div class="system-section"><h4><i class="fas fa-store"></i> آلية العمل:</h4><ul><li><i class="fas fa-check"></i> إنشاء نقطة بيع أو مركز توزيع</li><li><i class="fas fa-check"></i> توفير منتجات DXN مباشرة</li><li><i class="fas fa-check"></i> تسجيل أعضاء جدد</li></ul></div><div class="system-section"><h4><i class="fas fa-thumbs-up"></i> مميزات النظام:</h4><ul><li><i class="fas fa-check"></i> دخل يومي من البيع</li><li><i class="fas fa-check"></i> بناء ثقة قوية</li><li><i class="fas fa-check"></i> تسريع نمو الفريق</li></ul></div><div class="system-result"><p><i class="fas fa-building"></i> <strong>النتيجة:</strong> مشروع مستقر يجمع البيع وبناء الشبكة</p></div></div></div>
+            </div>
+            <div class="systems-summary fade-up"><h3><i class="fas fa-diagram-project" style="margin-left: 8px;"></i> خلاصة النظام</h3><div class="summary-items"><div class="summary-item"><i class="fas fa-bolt"></i><span>دخل سريع من <strong>IOC</strong></span></div><div class="summary-item"><i class="fas fa-chart-line"></i><span>دخل مستمر عبر <strong>النظام الأساسي</strong></span></div><div class="summary-item"><i class="fas fa-store"></i><span>دخل ثابت من <strong>ASP</strong></span></div></div><p style="margin-top: 1.5rem;">يمكنك البدء بخطوات بسيطة، ثم تطوير نشاطك حسب أهدافك.</p></div>
+        </div>
+    </section>
+
+    <!-- Business -->
+    <section id="business" class="business-section">
+        <div class="container">
+            <div class="section-header fade-up"><div class="section-subtitle">الفرصة التجارية</div><h2 class="section-title">ابدأ <span>رحلتك الآن</span></h2></div>
+            <div class="referral-section fade-up"><div class="referral-container"><h3 class="referral-title"><i class="fas fa-gem"></i> كود العضوية الخاص بك</h3><div class="referral-code-box"><div style="text-align: center;"><div class="referral-code-label">كود العضوية</div><div class="referral-code" id="referralCode">822431745</div></div><button class="copy-btn" id="copyBtn"><i class="fas fa-copy"></i> نسخ الكود</button></div><p class="referral-note"><i class="fas fa-info-circle"></i> اضغط على أي زر تسجيل لنسخ الكود تلقائياً والتوجيه لصفحة التسجيل</p></div></div>
+            <div class="business-grid">
+                <div class="fade-up"><h3 style="color: var(--primary-dark); margin-bottom: 1.25rem;">ماذا يمكنك أن تفعل كعضو؟</h3><ul class="benefits-list"><li><span><i class="fas fa-check"></i></span> <span><strong>شراء المنتجات</strong> بأسعار مخفضة</span></li><li><span><i class="fas fa-check"></i></span> <span><strong>بيع المنتجات</strong> وتحقيق ربح فوري</span></li><li><span><i class="fas fa-check"></i></span> <span><strong>بناء شبكة توزيع</strong> وتكوين فريق</span></li><li><span><i class="fas fa-check"></i></span> <span><strong>الحصول على عمولات</strong> من مبيعات الفريق</span></li></ul><div class="disclaimer-note"><p><i class="fas fa-info-circle" style="color: var(--gold-dark); margin-left: 8px;"></i> <strong>تنويه:</strong> الدخل يعتمد على الجهد الشخصي.</p></div></div>
+                <div class="fade-up"><h3 style="color: var(--primary-dark); margin-bottom: 1.25rem;">خطوات الانضمام</h3><div class="steps-vertical"><div class="step"><div class="step-number">1</div><div class="step-content"><h3>اضغط على أي زر تسجيل</h3><p>سيتم نسخ كود العضوية: <strong>822431745</strong></p></div></div><div class="step"><div class="step-number">2</div><div class="step-content"><h3>التوجيه لصفحة التسجيل</h3><p>سيتم فتح صفحة التسجيل الرسمية</p></div></div><div class="step"><div class="step-number">3</div><div class="step-content"><h3>الصق كود العضوية</h3><p>في المكان المخصص</p></div></div><div class="step"><div class="step-number">4</div><div class="step-content"><h3>أكمل بياناتك</h3><p>وأكمل عملية التسجيل</p></div></div><div class="step"><div class="step-number">5</div><div class="step-content"><h3>ابدأ رحلتك</h3><p>شراء المنتجات وبناء شبكتك</p></div></div></div><div style="text-align: center; margin-top: 1.5rem;"><a href="#" class="btn btn-gold btn-block register-btn">سجل الآن في DXN <i class="fas fa-external-link-alt" style="margin-right: 8px;"></i></a></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global -->
+    <section id="global">
+        <div class="container">
+            <div class="section-header fade-up"><div class="section-subtitle">انتشار عالمي</div><h2 class="section-title">DXN في <span>العالم وتونس</span></h2></div>
+            <div class="global-grid">
+                <div class="global-card primary fade-up"><h3>+180 دولة</h3><p>شبكة توزيع DXN تنتشر في أكثر من 180 دولة حول العالم. مكاتب رسمية في أغلب الدول العربية مثل الخليج والجزائر والمغرب، بالإضافة إلى مراكز توزيع معتمدة في آلاف المدن.</p><p><i class="fas fa-map-marker-alt" style="color: var(--gold); margin-left: 8px;"></i> <strong>المقر الرئيسي:</strong> ولاية قدح (Kedah)، ماليزيا</p></div>
+                <div class="global-card secondary fade-up"><h3 style="color: var(--primary-dark);"><i class="fas fa-flag" style="color: var(--gold-dark); margin-left: 8px;"></i> DXN في تونس</h3><p>يمكن للتونسيين الانضمام والاستفادة من نظام "عالم واحد - سوق واحد" والتمتع بجميع المزايا التي تقدمها الشركة.</p><ul><li><i class="fas fa-check-circle" style="color: var(--gold-dark); margin-left: 8px;"></i> التسجيل برقم عضوية عالمي</li><li><i class="fas fa-check-circle" style="color: var(--gold-dark); margin-left: 8px;"></i> الحصول على المنتجات عبر نظام التوزيع العالمي</li><li><i class="fas fa-check-circle" style="color: var(--gold-dark); margin-left: 8px;"></i> بناء شبكة توزيع محلية ودولية</li></ul><p style="margin-top: 1rem; font-style: italic;">انضم اليوم وكن جزءاً من مجتمع DXN العالمي!</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header fade-up"><div class="section-subtitle">الأسئلة الشائعة</div><h2 class="section-title">كل ما تريد <span>معرفته</span></h2></div>
+            <div class="faq-grid fade-up">
+                <div class="faq-item"><div class="faq-question"><span>ما هي DXN؟</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer">شركة ماليزية عالمية تأسست 1993، متخصصة في المكملات الغذائية الطبيعية.</div></div>
+                <div class="faq-item"><div class="faq-question"><span>ما هي أنظمة العمل؟</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer">النظام الأساسي (دخل مستمر)، IOC (دخل سريع)، ASP (مشروع ثابت).</div></div>
+                <div class="faq-item"><div class="faq-question"><span>كيف أنضم؟</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer">اضغط على أي زر تسجيل، سيتم نسخ الكود <strong>822431745</strong> وتوجيهك للتسجيل.</div></div>
+                <div class="faq-item"><div class="faq-question"><span>ما معنى DXN؟</span><i class="fas fa-chevron-down"></i></div><div class="faq-answer">مشتق من "Daxen" وتعني "الجديرة بالثقة".</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <section><div class="container"><div class="disclaimer-box fade-up"><h3><i class="fas fa-exclamation-triangle" style="color: var(--gold-dark);"></i> إخلاء المسؤولية</h3><p>منتجات DXN هي <strong>مكملات غذائية طبيعية</strong> وليست أدوية. النتائج تختلف من شخص لآخر. الدخل يعتمد على الجهد الفردي.</p></div></div></section>
+
+    <!-- Final CTA -->
+    <section id="join" class="final-cta">
+        <div class="container">
+            <h2>جاهز لبدء رحلتك مع DXN؟</h2>
+            <p style="margin-bottom: 1.5rem; opacity: 0.9;">انضم إلى أكثر من 18 مليون عضو حول العالم</p>
+            <div class="btn-group">
+                <a href="#" class="btn btn-gold register-btn">سجل الآن مجاناً <i class="fas fa-arrow-left"></i></a>
+                <a href="#" class="btn btn-outline register-btn">تواصل معنا</a>
+            </div>
+            <p style="margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.8;"><i class="fas fa-key"></i> كود العضوية: <strong style="background: rgba(255,255,255,0.2); padding: 0.2rem 0.8rem; border-radius: 50px;">822431745</strong></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div><div class="footer-logo"><img src="https://i.ibb.co/BVzKKKzF/IMG.jpg" alt="Amel" style="border-radius: 50%; width: 50px; height: 50px; object-fit: cover; border: 2px solid var(--gold);"><p style="margin-top: 0.5rem; font-size: 0.8rem; color: var(--gold-light);">Powered by amel</p></div><p style="margin-top: 0.75rem; opacity: 0.8; font-size: 0.9rem;">شريك معتمد لشركة DXN العالمية</p></div>
+                <div><h4>روابط سريعة</h4><ul><li><a href="#about">عن DXN</a></li><li><a href="#work-systems">أنظمة العمل</a></li><li><a href="#products">المنتجات</a></li><li><a href="#testimonials">تجارب ملهمة</a></li></ul></div>
+                <div><h4>منتجاتنا</h4><ul><li><a href="#">المكملات الغذائية</a></li><li><a href="#">المشروبات الصحية</a></li><li><a href="#">العناية الشخصية</a></li><li><a href="#">العناية بالبشرة</a></li></ul></div>
+                <div><h4>تواصل</h4><ul><li><i class="fas fa-envelope"></i> info@dxn2u.com</li><li><i class="fas fa-globe"></i> www.dxn2u.com</li><li><i class="fas fa-map-marker-alt"></i> قدح، ماليزيا</li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>© 2026 جميع الحقوق محفوظة. | صُمم بواسطة أمال بن يحي</p></div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp -->
+    <a href="#" id="whatsappBtn" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
+    <div class="whatsapp-tooltip" id="whatsappTooltip"><i class="fab fa-whatsapp"></i><span>تواصل مع أمال بن يحي</span><button class="close-tooltip" id="closeTooltip">&times;</button></div>
+    <div class="toast" id="toast"><i class="fas fa-check-circle"></i><span id="toastMessage">تم نسخ كود العضوية بنجاح!</span></div>
+
+    <script>
+        (function() {
+            "use strict";
+            
+            // Preloader - 2 seconds
+            setTimeout(function() {
+                const preloader = document.getElementById('preloader');
+                if (preloader) {
+                    preloader.classList.add('fade-out');
+                    setTimeout(function() { preloader.style.display = 'none'; }, 400);
+                }
+            }, 2000);
+            
+            const REFERRAL_CODE = "822431745";
+            const REGISTER_URL = "https://eworldv3.dxn2u.com/auth/register/distributor/";
+            const WHATSAPP_NUMBER = "21626965953";
+            const WHATSAPP_MESSAGE = `مرحبا بيك في صفحتي
+أنا أمال بن يحي
+مختصة في مجال الطب التكميلي والعلاجات الطبيعية
+
+نساعدك تفهم كيف تحسن صحتك بطرق طبيعية وآمنة
+ونشاركك تجربتي مع منتجات شركة DXN
+
+في هذه الصفحة ستجد
+شرح مبسط للمنتجات
+طرق الاستعمال
+تجارب حقيقية
+ونصائح عملية للعناية بصحتك
+
+إذا كنت تبحث عن تحسين صحتك أو بداية دخل إضافي
+أنت في المكان الصحيح
+
+اكتب لي سؤالك وسأرد عليك بكل وضوح`;
+            
+            // WhatsApp
+            const whatsappBtn = document.getElementById('whatsappBtn');
+            const whatsappTooltip = document.getElementById('whatsappTooltip');
+            const closeTooltip = document.getElementById('closeTooltip');
+            if (whatsappBtn) {
+                whatsappBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+                whatsappBtn.target = '_blank';
+                let timer;
+                whatsappBtn.addEventListener('mouseenter', () => { clearTimeout(timer); whatsappTooltip.classList.add('show'); });
+                whatsappBtn.addEventListener('mouseleave', () => { timer = setTimeout(() => whatsappTooltip.classList.remove('show'), 500); });
+                whatsappTooltip.addEventListener('mouseenter', () => { clearTimeout(timer); whatsappTooltip.classList.add('show'); });
+                whatsappTooltip.addEventListener('mouseleave', () => { timer = setTimeout(() => whatsappTooltip.classList.remove('show'), 500); });
+                closeTooltip.addEventListener('click', (e) => { e.stopPropagation(); whatsappTooltip.classList.remove('show'); });
+            }
+            
+            // Mobile Menu
+            const menuBtn = document.getElementById('mobileMenuBtn');
+            const navLinks = document.getElementById('navLinks');
+            if (menuBtn && navLinks) {
+                menuBtn.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                    menuBtn.querySelector('i').className = navLinks.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
+                });
+                navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => { navLinks.classList.remove('active'); menuBtn.querySelector('i').className = 'fas fa-bars'; }));
+            }
+
+            // Smooth scroll
+            document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', function(e) {
+                const href = this.getAttribute('href'); if (href === '#' || href === '') return;
+                const target = document.querySelector(href); if (target) { e.preventDefault(); window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' }); }
+            }));
+
+            // Toast
+            function showToast(msg) { const toast = document.getElementById('toast'); document.getElementById('toastMessage').textContent = msg; toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 3000); }
+
+            // Copy & Redirect
+            function copyAndRedirect(el) {
+                navigator.clipboard.writeText(REFERRAL_CODE).then(() => {
+                    showToast('✅ تم نسخ كود العضوية 822431745 بنجاح! جاري التوجيه...');
+                    if (el?.id === 'copyBtn') { el.classList.add('copied'); el.innerHTML = '<i class="fas fa-check"></i> تم النسخ'; setTimeout(() => { el.classList.remove('copied'); el.innerHTML = '<i class="fas fa-copy"></i> نسخ الكود'; }, 2000); }
+                    setTimeout(() => window.open(REGISTER_URL, '_blank'), 800);
+                }).catch(() => { showToast('⚠️ تعذر النسخ. الكود: 822431745'); setTimeout(() => window.open(REGISTER_URL, '_blank'), 1500); });
+            }
+            document.querySelectorAll('.register-btn').forEach(b => b.addEventListener('click', function(e) { e.preventDefault(); copyAndRedirect(this); }));
+            document.getElementById('copyBtn')?.addEventListener('click', function(e) { e.preventDefault(); navigator.clipboard.writeText(REFERRAL_CODE).then(() => { showToast('✅ تم نسخ كود العضوية بنجاح!'); this.classList.add('copied'); this.innerHTML = '<i class="fas fa-check"></i> تم النسخ'; setTimeout(() => { this.classList.remove('copied'); this.innerHTML = '<i class="fas fa-copy"></i> نسخ الكود'; }, 2000); }); });
+
+            // Fade up
+            const observer = new IntersectionObserver((e) => e.forEach(i => { if (i.isIntersecting) i.target.classList.add('visible'); }), { threshold: 0.1 });
+            document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+            // FAQ
+            document.querySelectorAll('.faq-question').forEach(q => q.addEventListener('click', function() {
+                const ans = this.nextElementSibling; const icon = this.querySelector('i');
+                document.querySelectorAll('.faq-answer').forEach(a => { if (a !== ans) a.classList.remove('show'); });
+                document.querySelectorAll('.faq-question i').forEach(i => { if (i !== icon) i.className = 'fas fa-chevron-down'; });
+                ans.classList.toggle('show'); icon.className = ans.classList.contains('show') ? 'fas fa-chevron-up' : 'fas fa-chevron-down';
+            }));
+        })();
+    </script>
+</body>
+</html>
